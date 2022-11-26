@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {
   String pageTitle = 'Signup';
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,11 +13,10 @@ class RegisterPage extends StatelessWidget {
       ),
       body: Center(
         child: Text('Welcome to $pageTitle Screen',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: Colors.yellow,
-          )),
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            )),
       ),
       drawer: Drawer(),
     );

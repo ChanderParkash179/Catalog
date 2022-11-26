@@ -16,12 +16,13 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Text('Welcome to $days days of $courseName',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: Colors.yellow,
-            )),
+        child: Text(
+          'Welcome to $days days of $courseName',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       drawer: Drawer(),
     );
