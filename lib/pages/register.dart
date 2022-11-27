@@ -5,6 +5,7 @@ import '../utils/routes.dart';
 
 class RegisterPage extends StatelessWidget {
   String pageTitle = 'Signup';
+  String signupImg = 'assets/imgs/signupImage.png';
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +19,12 @@ class RegisterPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              '$signupImg',
+              // fit: BoxFit.cover,
+              height: 300,
+              width: 500,
+            ),
             SizedBox(
               height: 100,
             ),

@@ -7,6 +7,7 @@ class HomePage extends StatelessWidget {
   int days = 30;
   String courseName = 'Flutter';
   String title = 'Catalog';
+  String homeImg = 'assets/imgs/homeImage.png';
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,12 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              '$homeImg',
+              // fit: BoxFit.cover,
+              height: 300,
+              width: 500,
+            ),
             SizedBox(
               height: 100,
             ),
