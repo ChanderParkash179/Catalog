@@ -1,7 +1,6 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors, unnecessary_string_interpolations, sort_child_properties_last
 
+import 'package:flutter/material.dart';
 import '../utils/routes.dart';
 
 class HomePage extends StatelessWidget {

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, unnecessary_string_interpolations
+
 import 'package:flutter/material.dart';
 import '../utils/routes.dart';
 
