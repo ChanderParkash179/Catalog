@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, unnecessary_string_interpolations, use_build_context_synchronously
 
 import 'package:catalog/utils/routes.dart';
+import 'package:catalog/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -180,7 +181,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

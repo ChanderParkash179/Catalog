@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_string_interpolations, sort_child_properties_last
 
+import 'package:catalog/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import '../utils/routes.dart';
 
@@ -74,7 +75,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

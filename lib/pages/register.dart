@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, unnecessary_string_interpolations
 
+import 'package:catalog/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import '../utils/routes.dart';
 
@@ -72,7 +73,7 @@ class RegisterPage extends StatelessWidget {
           ],
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
