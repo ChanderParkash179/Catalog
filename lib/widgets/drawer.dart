@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, unnecessary_string_interpolations, use_build_context_synchronously
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, unnecessary_string_interpolations, use_build_context_synchronously, must_be_immutable
 
 import 'package:catalog/utils/routes.dart';
 import 'package:flutter/cupertino.dart';

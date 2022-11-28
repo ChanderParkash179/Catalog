@@ -1,3 +1,4 @@
+// ignore_for_file: prefer_const_constructors, unnecessary_string_interpolations, sort_child_properties_last
 import 'package:catalog/pages/home.dart';
 import 'package:catalog/pages/login.dart';
 import 'package:catalog/pages/register.dart';
