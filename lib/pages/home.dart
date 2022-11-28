@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
 
   List<Item> list = [];
   loadData() async {
-    // await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 2));
     final String catalogJson =
         await rootBundle.loadString('assets/files/catalog.json');
     final decodedData = jsonDecode(catalogJson);
