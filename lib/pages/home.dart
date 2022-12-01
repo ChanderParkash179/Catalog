@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
 
   List<Item> list = [];
   loadData() async {
-    // await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 4));
     final String catalogJson =
         await rootBundle.loadString('assets/files/catalog.json');
     final decodedData = jsonDecode(catalogJson);
@@ -48,11 +48,47 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: (list.isNotEmpty && list != null)
-          ? ListView.builder(
+          ? GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 16,
+                crossAxisSpacing: 16,
+              ),
               itemCount: list.length,
               itemBuilder: (context, index) {
-                return ItemWidget(
-                  item: list[index],
+                final item = list[index];
+                return Card(
+                  clipBehavior: Clip.antiAlias,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: GridTile(
+                    header: Container(
+                      child: Text(
+                        item.name,
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      padding: EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.deepPurple,
+                      ),
+                    ),
+                    child: Image.network(item.image),
+                    footer: Container(
+                      child: Text(
+                        item.price.toString(),
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      padding: EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
                 );
               },
             )
